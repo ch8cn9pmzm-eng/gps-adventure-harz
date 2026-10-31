@@ -84,8 +84,8 @@ a:hover { color: var(--ember); }
 .hero-bg {
   position: absolute; inset: 0;
   background:
-    linear-gradient(180deg, rgba(13,40,24,.35) 0%, rgba(13,40,24,.55) 45%, rgba(13,40,24,.92) 100%),
-    url("assets/hero-hook.jpg") center / cover no-repeat;
+    linear-gradient(180deg, rgba(13,40,24,.55) 0%, rgba(13,40,24,.72) 40%, rgba(13,40,24,.95) 100%),
+    url("assets/hero-bg.jpg") center / cover no-repeat;
 }
 .hero-content {
   position: relative; z-index: 1;
