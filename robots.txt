@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gps-adventure-harz.de/sitemap.xml
