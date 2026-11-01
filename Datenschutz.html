@@ -19,7 +19,10 @@
         <span class="brand-mark" aria-hidden="true">📍</span>
         <span>GPS-Adventure-Harz</span>
       </a>
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" id="navToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Startseite</a></li>
         <li><a href="Impressum.html">Impressum</a></li>
       </ul>
@@ -55,5 +58,18 @@
 
     <p><a class="btn btn-dark" href="index.html" style="margin-top:1.5rem">← Zurück zur Startseite</a></p>
   </main>
+
+<script>
+(function(){
+  var btn=document.getElementById('navToggle');
+  var nav=document.getElementById('nav-links');
+  if(!btn||!nav) return;
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+  });
+})();
+</script>
 </body>
 </html>
